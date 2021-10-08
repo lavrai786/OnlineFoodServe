@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online Food Delivering Service in Buxar|MyOnlineMeal.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 1250px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0;
+
+
+        }
+
+        #logo {
+            margin: 15px 20px;
+
+        }
+
+        #logo img {
+            margin: 7px 15px;
+            height: 55px;
+
+        }
+
+        #navbar ul {
+            display: flex;
+            font-family: 'Anton', sans-serif;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: .4;
+
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.rem;
+        }
+
+        #navbar ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 5px 17px;
+            border-radius: 17px;
+
+        }
+
+        #navbar ul li a:hover {
+            background-color: white;
+            color: black;
+
+
+        }
+
+        /* home-section */
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 150px;
+            justify-content: center;
+            align-items: center;
+            height: 380px;
+        }
+
+        #home::before {
+            content: "";
+            background: url('new2.png')no-repeat center center/cover;
+            position: absolute;
+            height: 570px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+            opacity: .8;
+
+        }
+
+        #home h1 {
+            color: white;
+
+            text-align: center;
+
+            font-family: 'Baloo Thambi 2';
+
+        }
+
+        #home p {
+            color: white;
+            font-size: 1.3rem;
+            text-align: center;
+            font-family: 'Baloo Thambi 2';
+        }
+
+        /* Services */
+        .services-container h1 {
+            background-color: grey;
+        }
+
+        #services {
+            display: flex;
+            margin: 31px;
+
+        }
+
+        #services::before {
+            content: '';
+            background: url('4.png')no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: .4;
+        }
+
+        #services .box {
+            border: 2px solid red;
+            padding: 21px;
+            margin: 3px 5px;
+            background-color: grey;
+            border-radius: 23px;
+
+        }
+
+        #services .box img {
+            height: 150px;
+            display: block;
+            margin: auto;
+        }
+
+        #services .box p {
+            font-family: 'Baloo Thambi 2';
+        }
+
+        /* client section */
+        #client-section {
+            position: relative;
+            /* height: 400px; */
+        }
+
+        #client-section::before {
+            content: '';
+            background: url('new2.png')no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: .7;
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #clients img {
+            height: 111px;
+        }
+
+        .client-item {
+            padding: 29px;
+        }
+
+        /* contact-section */
+
+        #contact {
+            position: relative;
+        }
+
+        #contact::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: .7;
+            background: url('422.png')no-repeat center center/cover;
+        }
+
+        #contact-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 31px;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: .3rem;
+            border-radius: 7px;
+            font-size: 1rem;
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box label {
+            font-size: 1.3rem;
+            font-family: 'Baloo Thambi 2';
+        }
+
+        /* footer */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 6px 17px;
+
+        }
+
+        /* utility classes */
+        .h-secondary {
+            font-size: 2.1rem;
+            padding: 11px;
+            font-family: 'Baloo Thambi 2';
+        }
+
+        .h-primary {
+            font-size: 3.5rem;
+            padding: 7px;
+            margin-top: 31px;
+            font-family: 'Baloo Thambi 2';
+        }
+
+        .btn {
+            padding: 5px 17px;
+            border: 2px solid white;
+            background-color: cornflowerblue;
+            font-size: 11px;
+            margin: 11px;
+            border-radius: 8px;
+            cursor: pointer;
+
+        }
+
+        .centre {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="MyOnlineMeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About us</a></li>
+            <li class="item"><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sed porro ipsum consequatur iusto eveniet?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sed porro ipsum consequatur iusto eveniet?
+            Suscipit molestias magni ipsam accusantium libero?</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section class="services-container">
+        <h1 class="h-primary centre">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="1.png" alt="">
+                <h2 class="h-secondary centre"> Food Ordering</h2>
+                <p class="centre">Lorem, Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quidem
+                    soluta, voluptate eum totam quae itaque excepturi, incidunt voluptates eligendi blanditiis. ipsum
+                    dolor sit amet consectetur adipisicing elit. Rem similique quis, nobis veritatis molestiae magnam
+                    hic alias autem suscipit enim atque voluptatibus deleniti dolorem laborum adipisci nulla ab maiores
+                    consequuntur quisquam?</p>
+            </div>
+            <div class="box">
+                <img src="4.png" alt="">
+                <h2 class="h-secondary centre">Food Catering</h2>
+                <p class="centre">Lorem,Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem earum debitis
+                    esse voluptatum et. Nulla dolores iste fugit voluptate reiciendis eos? ipsum dolor sit amet
+                    consectetur adipisicing elit. Rem similique quis, nobis veritatis molestiae magnam hic alias autem
+                    suscipit enim atque voluptatibus deleniti dolorem laborum adipisci nulla ab maiores consequuntur
+                    quisquam?</p>
+            </div>
+            <div class="box">
+                <img src="2.png" alt="">
+                <h2 class="h-secondary centre">Home Delivery</h2>
+                <p class="centre">Lorem,Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, vitae
+                    temporibus unde incidunt provident accusantium excepturi enim minima tempore, sit totam. ipsum dolor
+                    sit amet consectetur adipisicing elit. Rem similique quis, nobis veritatis molestiae magnam hic
+                    alias autem suscipit enim atque voluptatibus deleniti dolorem laborum adipisci nulla ab maiores
+                    consequuntur quisquam?</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary centre">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="apple2.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="logo1.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="cola.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="insta.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="f.png" alt="Our Client">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary centre">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="My name" id="name" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="My email" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="phone" name="My phone" id="phone" placeholder="Enter your Phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name=" my message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="centre">
+            Copyright &copy;www.MyOnlinemeal.com.All Rights Resereved!
+        </div>
+    </footer>
+
+</body>
+
+</html>
